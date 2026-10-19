@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pasteleria</title>
+    <link rel="stylesheet" href="Estilo.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Mi Pastelería</h1>
+        <nav>
+            <a href="#catalogo">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Bienvenido a nuestra tienda</h2>
+            <p>Postres caseros hechos cada mañana.</p>
+        </section>
+
+        <!-- Sección del catálogo de productos -->
+        <section id="catalogo">
+            <h2>Nuestros Postres</h2>
+
+            <!-- Tarjeta individual de producto -->
+            <article>
+                <img src="pastel.jpg" alt="Pastel de chocolate">
+                <h3>Pastel de Chocolate</h3>
+                <p>Precio: $15</p>
+                <button type="button" onclick="agregarAlCarrito('Pastel de Chocolate')">Comprar</button>
+            </article>
+
+            <!-- Otra tarjeta de producto -->
+            <article>
+                <img src="galletas.jpg" alt="Galletas de avena">
+                <h3>Galletas de Avena</h3>
+                <p>Precio: $5</p>
+                <button type="button" onclick="agregarAlCarrito('Galletas de Avena')">Comprar</button>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p id="contacto">Contacto: info@mipasteleria.com</p>
+    </footer>
 </body>
 </html>
