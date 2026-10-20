@@ -6,7 +6,7 @@
     --color-secundario: #ffe4e1;    /* Rosa muy claro para fondos suaves */
     --color-fondo: #fffaf6;         /* Crema suave de fondo */
     --color-texto: #4a3e3d;         /* Marrón oscuro para textos */
-    --color-precio: #27ae60;        /* Verde fresco para precios */
+    --color-precio: #65e8ec;        /* Verde fresco para precios */
     --sombra-suave: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -184,4 +184,9 @@ footer {
     padding: 2rem;
     margin-top: 4rem;
     font-size: 0.95rem;
+}
+.imagen-personalizada {
+    width: 100%;       /* Se adapta al ancho del contenedor */
+    max-width: 400px;  /* No pasará de 400 píxeles de ancho */
+    height: auto;      /* Mantiene la proporción original para que no se deforme */
 }
