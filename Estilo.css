@@ -289,3 +289,187 @@ footer {
     font-size: 0.95rem;
     color: #666;
 }
+/* ===================================================
+   1. DISEÑO PARA LA PÁGINA "NOSOTROS"
+   =================================================== */
+
+/* Tarjeta principal de Historia */
+.seccion-nosotros {
+    background: #ffffff;
+    max-width: 850px;
+    margin: 2rem auto 3rem auto;
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+    border-top: 5px solid var(--color-principal);
+}
+
+.seccion-nosotros h2 {
+    color: var(--color-principal);
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.seccion-nosotros p {
+    font-size: 1.15rem;
+    color: #555555;
+    line-height: 1.8;
+}
+
+/* Sección de Valores y Pilares */
+.seccion-valores {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.seccion-valores h2 {
+    color: var(--color-texto);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor-valores {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.tarjeta-valor {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    width: 270px;
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+    border: 1px solid #ffe4e1;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-valor:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-valor h3 {
+    color: var(--color-principal);
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+}
+
+.tarjeta-valor p {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.5;
+}
+
+
+/* ===================================================
+   2. DISEÑO PARA LA PÁGINA "INICIO DE SESIÓN" (LOGIN)
+   =================================================== */
+
+.tarjeta-login {
+    background-color: #ffffff;
+    max-width: 420px;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+    border: 1px solid #ffe4e1;
+}
+
+.tarjeta-login h2 {
+    color: var(--color-principal);
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.tarjeta-login p {
+    color: #777777;
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-texto);
+}
+
+.campo input {
+    padding: 0.8rem 1rem;
+    border: 1.5px solid #eee;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al hacer clic dentro del campo de texto */
+.campo input:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 8px rgba(216, 112, 147, 0.2);
+}
+
+
+/* ===================================================
+   3. DISEÑO PARA LA PÁGINA "CONTACTO"
+   =================================================== */
+
+.seccion-contacto {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+    border-top: 5px solid var(--color-principal);
+}
+
+.seccion-contacto h2 {
+    color: var(--color-principal);
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.seccion-contacto > p {
+    color: #666666;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+/* Caja con la información detallada */
+.info-contacto {
+    background-color: var(--color-fondo);
+    padding: 2rem;
+    border-radius: 14px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    border: 1px dashed #ffd1dc;
+}
+
+.info-contacto p {
+    font-size: 1.05rem;
+    color: var(--color-texto);
+}
+
+.info-contacto strong {
+    color: var(--color-principal);
+}
