@@ -368,7 +368,7 @@ footer {
    2. DISEÑO PARA LA PÁGINA "INICIO DE SESIÓN" (LOGIN)
    =================================================== */
 
-.tarjeta-login {
+.tarjeta-Login {
     background-color: #ffffff;
     max-width: 420px;
     margin: 3rem auto;
@@ -379,19 +379,19 @@ footer {
     border: 1px solid #ffe4e1;
 }
 
-.tarjeta-login h2 {
+.tarjeta-Login h2 {
     color: var(--color-principal);
     font-size: 2rem;
     margin-bottom: 0.4rem;
 }
 
-.tarjeta-login p {
+.tarjeta-Login p {
     color: #777777;
     font-size: 0.95rem;
     margin-bottom: 1.8rem;
 }
 
-.formulario-login {
+.formulario-Login {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
