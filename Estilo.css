@@ -1,113 +1,187 @@
+/* ===================================================
+   1. VARIABLES Y RESET GENERAL
+   =================================================== */
+:root {
+    --color-principal: #d87093;      /* Rosa pastel elegante */
+    --color-secundario: #ffe4e1;    /* Rosa muy claro para fondos suaves */
+    --color-fondo: #fffaf6;         /* Crema suave de fondo */
+    --color-texto: #4a3e3d;         /* Marrón oscuro para textos */
+    --color-precio: #27ae60;        /* Verde fresco para precios */
+    --sombra-suave: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #d46abd; /* Fondo crema suave */
-    color: #333333;           /* Texto oscuro para buena lectura */
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     line-height: 1.6;
 }
 
+/* ===================================================
+   2. ENCABEZADO (HEADER)
+   =================================================== */
 header {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.2rem 3rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
-    color: #d87093; /* Rosa pastel elegante */
-    font-size: 1.8rem;
+    color: var(--color-principal);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
 }
 
 nav a {
     text-decoration: none;
-    color: #555555;
-    margin-left: 1.5rem;
-    font-weight: bold;
+    color: #666666;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #d87093;
+    color: var(--color-principal);
 }
 
+/* ===================================================
+   3. CONTENIDO PRINCIPAL Y SECCIONES
+   =================================================== */
 main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
 }
 
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
-section h2 {
-    color: #d87093;
-    margin-bottom: 1rem;
+/* Sección de bienvenida introductoria */
+section:first-of-type {
+    background: linear-gradient(135deg, var(--color-secundario), #fff5f5);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: var(--sombra-suave);
 }
 
+section:first-of-type h2 {
+    color: var(--color-principal);
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+section:first-of-type p {
+    font-size: 1.1rem;
+    color: #665;
+}
+
+/* Título de la sección del catálogo */
+#catalogo ~ h2, section h2 {
+    color: var(--color-texto);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* ===================================================
+   4. TARJETAS DE PRODUCTO (GRID / FLEXBOX)
+   =================================================== */
 #catalogo {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 article {
-    background-color: hsl(323, 57%, 61%);
-    border: 1px solid #ffe4e1;
-    border-radius: 10px;
+    background-color: #ffffff;
+    border-radius: 16px;
     padding: 1.5rem;
-    width: 250px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    width: 280px;
+    box-shadow: var(--sombra-suave);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover moderno: la tarjeta se eleva ligeramente */
+article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 article img {
     width: 100%;
-    height: 150px;
+    height: 170px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-bottom: 1rem;
 }
 
 article h3 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    color: var(--color-texto);
 }
 
 article p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #2e7d32; /* Verde para el precio */
-    margin-bottom: 1rem;
+    color: var(--color-precio);
+    margin-bottom: 1.2rem;
 }
 
+/* ===================================================
+   5. BOTONES INTERACTIVOS
+   =================================================== */
 button {
-    background-color: #d87093;
+    background-color: var(--color-principal);
     color: white;
     border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
-    font-size: 1rem;
+    padding: 0.75rem 1.2rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    width: 100%;
 }
 
 button:hover {
     background-color: #b55273;
 }
 
+button:active {
+    transform: scale(0.98); /* Pequeño efecto de presión al hacer clic */
+}
+
+/* ===================================================
+   6. PIE DE PÁGINA (FOOTER)
+   =================================================== */
 footer {
-    background-color: #4a3e3d;
-    color: rgb(118, 234, 250);
+    background-color: var(--color-texto);
+    color: white;
     text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 0.95rem;
 }
