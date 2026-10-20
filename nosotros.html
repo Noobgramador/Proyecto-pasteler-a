@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre Nosotros - Mi Pastelería</title>
+    <!-- Usamos el mismo archivo CSS con truco de caché -->
+    <link rel="stylesheet" href="estilos.css?v=2">
 </head>
 <body>
-    
+
+    <!-- ENCABEZADO COMPARTIDO -->
+    <header>
+        <h1>Mi Pastelería</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="Login.html">Iniciar Sesión</a>
+            <a href="Catalogo.html">Catálogo</a>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL DE "NOSOTROS" -->
+    <main>
+        <!-- Sección de historia / presentación -->
+        <section class="seccion-nosotros">
+            <h2>Nuestra Historia</h2>
+            <p>Fundada en 2020 con una batidora, un horno pequeño y muchas ilusiones, <strong>Mi Pastelería</strong> nació del amor por la repostería artesanal y casera. Creemos que cada postre cuenta una historia y es parte de tus momentos más especiales.</p>
+        </section>
+
+        <!-- Sección de valores o pilares -->
+        <section class="seccion-valores">
+            <h2>Lo Que Nos Define</h2>
+            <div class="contenedor-valores">
+                <article class="tarjeta-valor">
+                    <h3>🌾 Ingredientes 100% Naturales</h3>
+                    <p>Sin conservantes artificiales ni químicos. Trabajamos con harina fresca, mantequilla real y fruta de la mejor calidad.</p>
+                </article>
+
+                <article class="tarjeta-valor">
+                    <h3>❤️ Hecho a Mano</h3>
+                    <p>Cada pastel, tarta y galleta es horneado diariamente con dedicación y esmero por nuestros pasteleros expertos.</p>
+                </article>
+
+                <article class="tarjeta-valor">
+                    <h3>🎂 Pasión por el Detalle</h3>
+                    <p>Cuidamos cada acabado y sabor para asegurarnos de que tu experiencia dulce sea inolvidable en cada bocado.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Contacto: info@mipasteleria.com | Todos los derechos reservados</p>
+    </footer>
+
 </body>
 </html>

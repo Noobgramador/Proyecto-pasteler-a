@@ -242,3 +242,50 @@ footer {
     line-height: 2;
     text-align: left;
 }
+/* ===================================================
+   ESTILOS PARA LA PÁGINA "NOSOTROS"
+   =================================================== */
+
+.seccion-nosotros {
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: var(--sombra-suave);
+    margin-bottom: 3rem;
+}
+
+.seccion-nosotros p {
+    font-size: 1.15rem;
+    color: #665;
+    max-width: 700px;
+    margin: 1rem auto 0 auto;
+}
+
+.contenedor-valores {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/* Reutilizamos el estilo de las tarjetas pero adaptado para valores */
+.tarjeta-valor {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 280px;
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+}
+
+.tarjeta-valor h3 {
+    color: var(--color-principal);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-valor p {
+    font-size: 0.95rem;
+    color: #666;
+}
