@@ -60,7 +60,7 @@ section h2 {
 }
 
 article {
-    background-color: #ffffff;
+    background-color: hsl(323, 57%, 61%);
     border: 1px solid #ffe4e1;
     border-radius: 10px;
     padding: 1.5rem;
@@ -106,7 +106,7 @@ button:hover {
 
 footer {
     background-color: #4a3e3d;
-    color: white;
+    color: rgb(118, 234, 250);
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
