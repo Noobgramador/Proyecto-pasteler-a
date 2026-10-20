@@ -190,3 +190,55 @@ footer {
     max-width: 400px;  /* No pasará de 400 píxeles de ancho */
     height: auto;      /* Mantiene la proporción original para que no se deforme */
 }
+/* ===================================================
+   ESTILOS PARA CONTACTO Y LOGIN
+   =================================================== */
+
+/* Formulario de Login y Tarjeta centrada */
+.tarjeta-login, .seccion-contacto {
+    background-color: #ffffff;
+    max-width: 450px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--sombra-suave);
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-texto);
+}
+
+.campo input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus {
+    border-color: var(--color-principal);
+}
+
+.info-contacto {
+    margin-top: 1.5rem;
+    line-height: 2;
+    text-align: left;
+}
